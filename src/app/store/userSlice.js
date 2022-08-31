@@ -109,7 +109,7 @@ const userSlice = createSlice({
         data: {
           id: action.payload.id,
           name: action.payload.name,
-          photoURL: 'assets/images/avatars/avatar.jpg',
+          photoURL: 'assets/images/avatars/willy.jpeg',
           email: action.payload.email,
           shortcuts: [],
           token: action.payload.token,

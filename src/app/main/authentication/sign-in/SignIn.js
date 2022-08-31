@@ -41,8 +41,8 @@ const SignIn = () => {
   const { isValid, dirtyFields, errors } = formState;
 
   useEffect(() => {
-    setValue('email', 'leticia@teste.com', { shouldDirty: true, shouldValidate: true });
-    setValue('password', 'senha123', { shouldDirty: true, shouldValidate: true });
+    setValue('email', '', { shouldDirty: true, shouldValidate: true });
+    setValue('password', '', { shouldDirty: true, shouldValidate: true });
   }, [setValue]);
 
   function onSubmit({ email, password }) {
@@ -67,35 +67,7 @@ const SignIn = () => {
         className="relative hidden md:flex flex-auto items-center justify-center h-full p-64 lg:px-112 overflow-hidden "
         sx={{ backgroundColor: 'primary.main' }}
       >
-        <svg
-          className="absolute inset-0 pointer-events-none"
-          viewBox="0 0 960 540"
-          width="100%"
-          height="100%"
-          preserveAspectRatio="xMidYMax slice"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <Box
-            component="g"
-            sx={{ color: 'primary.light' }}
-            className="opacity-20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="100"
-          >
-            <circle r="234" cx="196" cy="23" />
-            <circle r="234" cx="790" cy="491" />
-          </Box>
-        </svg>
-        <Box
-          component="svg"
-          className="absolute -top-64 -right-64 opacity-20"
-          sx={{ color: 'primary.light' }}
-          viewBox="0 0 220 192"
-          width="220px"
-          height="192px"
-          fill="none"
-        >
+        <Box>
           <defs>
             <pattern
               id="837c3e70-6c3a-44e6-8854-cc48c737b659"
@@ -113,8 +85,7 @@ const SignIn = () => {
 
         <div className="z-10 relative w-full max-w-2xl">
           <div className="text-7xl font-bold leading-none text-gray-100">
-            <img className="w-128 mb-20" src="assets/images/logo/logo.png" alt="logo" />
-            <div>To Do List</div>
+            <div>Pagina de recados</div>
           </div>
           <div className="mt-24 text-lg tracking-tight leading-6 text-gray-400">
             Lista de tarefas em React. Projeto criado utilizando o Growbase da Growdev para o módulo

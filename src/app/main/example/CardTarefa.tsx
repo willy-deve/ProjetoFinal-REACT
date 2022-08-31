@@ -27,11 +27,9 @@ const CardTarefa: React.FC<CardTarefaProps> = ({ titulo, texto, id }) => {
   };
   const handleApagar = () => {
     const { token } = usuarioLogado.data;
-    const confirma = confirm(`Deseja apagar o recado ${id}?`);
-    if (confirma) {
-      dispatch(excluirTarefa({ url: '/task', id, token }));
-      dispatch(deletarTarefa(id));
-    }
+
+    dispatch(excluirTarefa({ url: '/task', id, token }));
+    dispatch(deletarTarefa(id));
   };
 
   const handleClose = () => {
@@ -41,14 +39,30 @@ const CardTarefa: React.FC<CardTarefaProps> = ({ titulo, texto, id }) => {
   return (
     <>
       <Card
+        sx={{
+          background: '#aea1a1',
+        }}
       >
         <CardActionArea>
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography
+              sx={{
+                color: '#fff',
+              }}
+              gutterBottom
+              variant="h5"
+              component="div"
+            >
               {titulo}
             </Typography>
 
-            <Typography variant="body2" component="div">
+            <Typography
+              sx={{
+                color: '#fff',
+              }}
+              variant="body2"
+              component="div"
+            >
               {texto}
             </Typography>
           </CardContent>
@@ -58,7 +72,7 @@ const CardTarefa: React.FC<CardTarefaProps> = ({ titulo, texto, id }) => {
             <EditIcon color="primary" />
           </IconButton>
           <IconButton aria-label="apagar tarefa" onClick={() => handleApagar()}>
-            <DeleteIcon color="secondary" />
+            <DeleteIcon color="primary" />
           </IconButton>
         </CardActions>
       </Card>

@@ -53,7 +53,7 @@ const Root = styled('div')(({ theme }) => ({
 }));
 
 function renderInputComponent(inputProps) {
-  const { variant, inputRef = () => {}, ref, ...other } = inputProps;
+  const { variant, inputRef = () => { }, ref, ...other } = inputProps;
   return (
     <div className="w-full relative">
       {variant === 'basic' ? (
@@ -143,14 +143,14 @@ function getSuggestions(value, data) {
   return inputLength === 0
     ? []
     : data.filter((suggestion) => {
-        const keep = count < 10 && match(suggestion.title, inputValue).length > 0;
+      const keep = count < 10 && match(suggestion.title, inputValue).length > 0;
 
-        if (keep) {
-          count += 1;
-        }
+      if (keep) {
+        count += 1;
+      }
 
-        return keep;
-      });
+      return keep;
+    });
 }
 
 function getSuggestionValue(suggestion) {

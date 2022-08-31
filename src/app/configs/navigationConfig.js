@@ -11,20 +11,12 @@ i18next.addResourceBundle('ar', 'navigation', ar);
 const navigationConfig = [
   {
     id: 'apps',
-    title: 'Applications',
-    subtitle: 'Custom made application designs',
+    title: 'Tarefas',
+    subtitle: 'Seja bem vindo ao seu perfil de recados',
     type: 'group',
     icon: 'heroicons-outline:home',
-    translate: 'APPLICATIONS',
-    children: [
-      {
-        id: 'tarefas',
-        title: 'Tarefas',
-        type: 'collapse',
-        icon: 'heroicons-outline:shopping-cart',
-        translate: 'TASKS',
-      },
-    ],
+    translate: 'Tarefas',
+    children: [],
   },
 ];
 

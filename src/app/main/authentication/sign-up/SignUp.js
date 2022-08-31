@@ -207,7 +207,7 @@ const SignUp = () => {
 
         <div className="z-10 relative w-full max-w-2xl">
           <div className="text-7xl font-bold leading-none text-gray-100">
-            <div>To Do List</div>
+            <div>Pagina de recados</div>
           </div>
           <div className="mt-24 text-lg tracking-tight leading-6 text-gray-400">
             Lista de tarefas em React. Projeto criado utilizando o Growbase da Growdev para o módulo
@@ -222,9 +222,9 @@ const SignUp = () => {
               }}
             >
               <Avatar src="assets/images/avatars/leticia.png" />
-              <Avatar src="assets/images/avatars/bauru.png" />
-              <Avatar src="assets/images/avatars/cacetinho.jpg" />
-              <Avatar src="assets/images/avatars/pendrive.jpg" />
+              <Avatar src="assets/images/avatars/willy.jpeg" />
+              <Avatar src="assets/images/avatars/leticia.png" />
+              <Avatar src="assets/images/avatars/willy.jpeg" />
             </AvatarGroup>
 
             <div className="ml-16 font-medium tracking-tight text-gray-400">

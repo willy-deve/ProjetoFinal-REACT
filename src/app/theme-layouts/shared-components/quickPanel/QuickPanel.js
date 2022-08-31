@@ -15,7 +15,7 @@ import { memo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
 import { selectQuickPanelData } from './store/dataSlice';
-import { selectQuickPanelState, toggleQuickPanel } from './store/stateSlice';
+import { selectQuickPanelState } from './store/stateSlice';
 
 const StyledSwipeableDrawer = styled(SwipeableDrawer)(({ theme }) => ({
   '& .MuiDrawer-paper': {
@@ -46,11 +46,11 @@ function QuickPanel(props) {
 
   return (
     <StyledSwipeableDrawer
-      open={state}
-      anchor="right"
-      onOpen={(ev) => {}}
-      onClose={(ev) => dispatch(toggleQuickPanel())}
-      disableSwipeToOpen
+    // open={state}
+    // anchor="right"
+    // onOpen={(ev) => { }}
+    // onClose={(ev) => dispatch(toggleQuickPanel())}
+    // disableSwipeToOpen
     >
       <FuseScrollbars>
         <ListSubheader component="div">Today</ListSubheader>
